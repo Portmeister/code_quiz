@@ -1,0 +1,25 @@
+/* set body attributes */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: chartreuse;
+}
+
+/* set header attributes */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+/* set main attributes */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
