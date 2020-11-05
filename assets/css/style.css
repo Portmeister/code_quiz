@@ -1,19 +1,35 @@
+:root {
+    font-size: 1rem;
+}
+
 /* set body attributes */
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     height: 100vh;
     background-color: black;
     color: chartreuse;
 }
 
-/* set header attributes */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
+header span {
+    font-size: 1.5rem;
+}
+a:link {
+    color: chartreuse;
+    text-decoration: none;
+}
+
+a:visited {
+    color: chartreuse;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 /* set main attributes */
@@ -22,4 +38,12 @@ main {
     justify-content: center;
     align-items: center;
     height: 90%;
+}
+
+.jumbotron h1 {
+    text-align: center;
+}
+
+.jumbotron hr {
+    background-color: chartreuse;
 }
