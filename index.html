@@ -17,7 +17,7 @@
                 </span>
             </div>
             <div class="d-flex justify-content-end">
-                <span>
+                <span id="time">
                     Time:
                 </span>
             </div>
@@ -25,13 +25,75 @@
     </header>
 
     <main>
-        <div class="jumbotron bg-dark">
-            <h1 class="display-4">Coding Quiz Challange</h1>
-            <p class="lead">Try to answer the following code-related questions within the time limit.</p>
-            <hr class="my-4">
-            <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Start Quiz</button>
-          </div>
+        <section id="main-page">
+            <div class="jumbotron bg-dark">
+                <h1 class="display-4">Coding Quiz Challange</h1>
+                <p class="lead">Try to answer the following code-related questions within the time limit.</p>
+                <hr class="my-4">
+                <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                <button type="button" class="btn btn-primary btn-lg btn-block" onclick=firstQuestion()>Start Quiz</button>
+            </div>
+        </section>
+        <section id="first-question">
+            <div class="jumbotron bg-dark">
+                <h1 class="display-4" id="ask1"></h1>
+                <hr class="my-4">
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask1answer1" onclick=secondQuestion()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask1answer2" onclick=secondQuestion()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask1answer3" onclick=secondQuestion()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask1answer4" onclick=secondQuestion()></button>
+            </div>
+        </section>
+        <section id="second-question">
+            <div class="jumbotron bg-dark">
+                <h1 class="display-4" id="ask2"></h1>
+                <hr class="my-4">
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask2answer1" onclick=thirdQuestion()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask2answer2" onclick=thirdQuestion()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask2answer3" onclick=thirdQuestion()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask2answer4" onclick=thirdQuestion()></button>
+            </div>
+        </section>
+        <section id="third-question">
+            <div class="jumbotron bg-dark">
+                <h1 class="display-4" id="ask3"></h1>
+                <hr class="my-4">
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask3answer1" onclick=fourthQuestion()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask3answer2" onclick=fourthQuestion()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask3answer3" onclick=fourthQuestion()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask3answer4" onclick=fourthQuestion()></button>
+            </div>
+        </section>
+        <section id="fourth-question">
+            <div class="jumbotron bg-dark">
+                <h1 class="display-4" id="ask4"></h1>
+                <hr class="my-4">
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask4answer1" onclick=fifthQuestion()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask4answer2" onclick=fifthQuestion()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask4answer3" onclick=fifthQuestion()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask4answer4" onclick=fifthQuestion()></button>
+            </div>
+        </section>
+        <section id="fifth-question">
+            <div class="jumbotron bg-dark">
+                <h1 class="display-4" id="ask5"></h1>
+                <hr class="my-4">
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask5answer1" onclick=highScores()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask5answer2" onclick=highScores()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask5answer3" onclick=highScores()></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="ask5answer4" onclick=highScores()></button>
+            </div>
+        </section>
+        <section id="high-scores">
+            <div class="jumbotron bg-dark">
+                <h1 class="display-4" id="announce">All Done!</h1>
+                <p id="score"></p>
+                <hr class="my-4">
+                <p>Enter your initials below</p>
+                <input class="form-control" type="text" placeholder="Enter Initials">
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+            </div>
+        </section>    
     </main>
        
     <script src="assets/js/script.js"></script>
