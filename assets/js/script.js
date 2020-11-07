@@ -69,10 +69,7 @@ function highScores() {
     localStorage.setItem("name", "John Doe");
 }
 
-document.getElementById("ask1answer3").addEventListener("click", timeleft -= 10);
-
-/*
-document.getElementById("ask1answer1").addEventListener("click", timeLeft - 10);
-document.getElementById("ask1answer2").addEventListener("click", timeLeft - 10);
-document.getElementById("ask1answer4").addEventListener("click", timeLeft - 10);
-*/  
+function highScoresList() {
+    document.getElementById("high-scores").style.display = "none";
+    document.getElementById("high-scores-list").style.display = "block";
+}

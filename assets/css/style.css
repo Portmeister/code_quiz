@@ -48,6 +48,6 @@ main {
     background-color: chartreuse;
 }
 
-#first-question, #second-question, #third-question, #fourth-question, #fifth-question, #high-scores {
+#first-question, #second-question, #third-question, #fourth-question, #fifth-question, #high-scores, #high-scores-list {
     display: none;
 }
